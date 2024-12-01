@@ -1,6 +1,6 @@
 import Search from "./Search";
 const Home = () => {
-  return <Search />;
+    return <Search />;
 };
 
 export default Home;

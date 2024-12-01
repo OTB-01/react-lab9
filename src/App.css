@@ -1,25 +1,32 @@
 .navbar ul {
-  background-color: rgb(50, 50, 50);
-  padding: 10px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
 }
 
 .navbar li {
-  display: inline;
-  margin-left: 5%;
+    display: inline;
+    margin-left: 5%;
+}
+.navbar li:last-child {
+    margin-left: 75%;
+    padding: 5px;
+    border: #f0f0f0 1px solid;
+    border-radius: 5px;
 }
 
 .navbar a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
+
 .navbar a:hover {
-  background-color: aliceblue;
-  color: black;
+    background-color: aliceblue;
+    color: black;
 }
 
 footer {
-  grid-area: footer;
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
+    grid-area: footer;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
 }
