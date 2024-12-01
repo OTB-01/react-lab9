@@ -5,6 +5,7 @@ import {
     doSignInWithEmailAndPassword,
     doSingInWithGoogle,
 } from "../../firebase/auth";
+import "./login.css";
 
 const Login = () => {
     const { userLoggedIn } = useAuth();
@@ -32,8 +33,8 @@ const Login = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={onSubmit}>
+        <div className="login-wrapper">
+            <form className="login-form" onSubmit={onSubmit}>
                 <input
                     type="email"
                     name="email"
@@ -49,7 +50,9 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
 
-            <button onClick={GoogleSignIn}>Sign in with Google</button>
+            <button className="google-login" onClick={GoogleSignIn}>
+                Sign in with Google
+            </button>
         </div>
     );
 };
